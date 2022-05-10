@@ -1,0 +1,89 @@
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+    display: flex;
+    height: 97vh;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    padding: 25px 25px 15px 25px;
+    border-radius: 15px;
+    background-color: hsl(216, 50%, 16%);
+}
+.card-image{
+    position: relative;
+    cursor: pointer;
+}
+.view-layer{
+    opacity: 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.4);
+    height: 99%;
+    width: 100%;
+    position: absolute;
+}
+.card-image:hover .view-layer{
+    opacity: 1;
+    transition-duration: 400ms;
+}
+.card-image img{
+    border-radius: 15px;
+}
+.content-top h2:hover{
+    color: cyan;
+    cursor: pointer;
+}
+.content-top p{
+    color: hsl(215, 51%, 70%);
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.eth-balance{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    white-space: nowrap;
+    color: cyan;
+    font-weight: bolder;
+}
+.days-left{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.divider{
+    position: relative;
+    height: .6px;
+    padding: 0 15px;
+    border-radius: 10px;
+    margin: 20px 0 10px 0;
+    background-color: hsl(215, 32%, 27%);
+}
+.created-by{
+    display: flex;
+    gap: 20px;
+    color: hsl(215, 51%, 70%);
+    align-items: center;
+}
+.created-by strong{
+    color: white;
+}
+.created-by strong:hover{
+    color: cyan;
+    cursor: pointer;
+}
+.created-by .profile img{
+    border-radius: 100%;
+}
+.created-by .profile{
+    border: 1.7px solid white;
+    height:33px;
+    border-radius: 100%;
+}
