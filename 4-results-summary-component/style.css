@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Hanken Grotesk', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card{
+  display: flex;
+  border-radius: 2rem;
+  box-shadow: 10px black;
+  box-shadow: 10px 10px 30px 0 hsla(241, 72%, 46%, 0.1);
+}
+.card-left{
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: white;
+  text-align: center;
+  padding: 1.7rem 2rem 2.5rem 2rem;
+  border-radius: 2rem;
+  max-width: 23vw;
+  min-width: 300px;
+}
+.card-left p:nth-child(1){
+  font-size: 1.2rem;
+}
+.circle{
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.2rem auto;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+}
+.card-left .circle-content h1{
+  font-size:3.4rem;
+  line-height: 55px;
+}
+.circle-content p{
+  font-size: .8rem;
+  color:  hsl(241, 100%, 89%);
+}
+.card-left .bottom-content p{
+  color:  hsl(241, 100%, 89%);
+  width: 70%;
+  margin:  0 auto;
+  margin-top: 10px;
+}
+.card-left .bottom-content h2{
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.card-right{
+ padding: 2rem 2.5rem; 
+ min-width: 24rem;
+}
+.card-right h3:nth-child(1){
+  font-size: 22px;
+  color:  hsl(224, 30%, 27%);
+}
+.stat-cards{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.stat-card-sm{
+  display: flex;
+  padding: 14px 10px;
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+.stat-card-sm:nth-child(1){
+  background-color: hsla(0, 100%, 67%, .1);
+}
+.stat-card-sm:nth-child(2){
+  background-color: hsla(39, 100%, 56%, .1);
+}
+.stat-card-sm:nth-child(3){
+  background-color: hsla(166, 100%, 37%, .1);
+}
+.stat-card-sm:nth-child(4){
+  background-color: hsla(234, 85%, 45%, .1);
+}
+.stat-card-sm:nth-child(1) > div:nth-child(1){
+  color: hsl(0, 100%, 67%);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.stat-card-sm:nth-child(2) > div:nth-child(1){
+  color: hsl(39, 100%, 56%);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.stat-card-sm:nth-child(3) > div:nth-child(1){
+  color: hsl(166, 100%, 37%);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.stat-card-sm:nth-child(4) > div:nth-child(1){
+  color: hsl(234, 85%, 45%);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.stat-card-sm > div:nth-child(2)>span:nth-child(1){
+  font-weight: 800;
+}
+.stat-card-sm>div:nth-child(2)>span:nth-child(1){
+  color: black;
+}
+.stat-card-sm>div:nth-child(2){
+  color: hsl(241, 100%, 89%);
+}
+.card-right button{
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  width: 100%;
+  height: 55px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.card-right button:hover{
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+@media (max-width:670px){
+  body{
+    display: block;
+  }
+  .card{
+    display: block;
+  }
+  .card-left{
+    max-width: 100%;
+    border-radius: 0 0 2rem 2rem;
+    padding: 1rem 0 1.5rem 0;
+  }
+  .card-left .bottom-content p{
+    width: 60vw;
+  }
+.card-right h3:nth-child(1){
+  font-size: 1.2rem;
+}
+.card-right{
+  padding: 1rem 1.8rem 1rem 1.8rem;
+}
+.stat-cards{
+  margin: 1.3rem 0;
+}
+}
